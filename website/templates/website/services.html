@@ -1,0 +1,10 @@
+{% extends 'website/base.html' %} {% block content %}
+<section class="section">
+  <h2>Our Services</h2>
+  {% for service in services %}
+  <h3>{{ service.name }}</h3>
+  <p>{{ service.description }}</p>
+  <p>Price: ${{ service.price }}</p>
+  {% endfor %}
+</section>
+{% endblock %}
